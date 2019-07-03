@@ -212,7 +212,7 @@ class SynchronizedOverlay extends olOverlay {
         }
       }
     }
-    if (element.parentNode) {
+    if (element && element.parentNode) {
       // set new Observer
       this.observeTarget_(element.parentNode);
     }
